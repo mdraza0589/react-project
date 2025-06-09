@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 200px;
+    background:linear-gradient(rgba(255, 0, 0, 0.57),rgba(128, 0, 128, 0.559));
+    height: 100vh;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: rgba(0, 0, 255, 0.214);
+    height: 60px;
+    align-items: center;
+}
+.logo button{
+    background: transparent;
+    border: none;
+}
+.right{
+    border-width: 8px 10px 8px 0;
+    border-color: transparent white transparent transparent;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    cursor: pointer;
+}
+.left{
+    border-width: 8px 0 8px 10px;
+    border-color: transparent transparent transparent white;
+}
+.open{
+    width: 40px;
+    transition: 0.5s;
+}
+.closed{
+    width: 200px;
+    transition: 0.5s;
+}
+.company-name{
+    color: rgb(12, 12, 67);
+    font-weight: 700;
+    font-size: 22px;
+}
+.listItem{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.icon{
+    cursor: pointer;
+    width: 50%;
+    padding: 10px 0;
+}
+.iconName{
+    width: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    position: relative;
+}
+.iconName::after{
+    content: '';
+    background-color: black;
+    width: 0px; 
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.5s;
+}
+.iconName:hover::after {
+    width: 100%;
+}
+

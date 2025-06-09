@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    min-height: 100vh;
+    background: rgb(0, 0, 0, 0.7) url(https://cdn.pixabay.com/photo/2019/12/16/10/49/building-4699096_640.jpg);
+    background-blend-mode: darken;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+
+.novisible {
+    display: none;
+}
+
+.visible {
+    scrollbar-color: #888 transparent;
+    display: inline-block;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+
+ 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
