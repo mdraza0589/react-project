@@ -4,6 +4,7 @@ const App = () => {
   const [count, setCount] = useState(0);
   return (
     <div className='flex flex-col items-center justify-center h-screen'>
+      <h1>Increase Button</h1>
       <div>
         {count}
       </div> <br />
